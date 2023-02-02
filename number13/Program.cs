@@ -5,13 +5,24 @@
 
 Console.Write("Введите трехзначное число: ");
 int a = int.Parse(Console.ReadLine()!);
-int b = 0;
+int b = a % 10;
 int c = 0;
-while(a >= 100)
+int k = 0;
+while (a >= 100)
 {
+    k = b;
     c = a / 10;
-    b = c % 10;
-    Console.Write(b);
-    return b;
+    a = c;
+    b = a % 10;
+    Console.Clear();
+    Console.WriteLine(k);
+    
 }
-Console.WriteLine("третьей цифры нет");
+while (k == 0)
+{
+    Console.WriteLine("третьей цифры нет");
+    break;
+}
+
+
+
