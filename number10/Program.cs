@@ -15,9 +15,8 @@ int a = int.Parse(Console.ReadLine()!);
 //}
 //else
 //{
-    int b = a / 100;
-    int c = a % 10;
-    int result = (a - b * 100 - c) / 10;
+    int b = a / 10;
+    int c = b % 10;
     
-    Console.Write($"Вторая цифра числа {result}");
+    Console.Write($"Вторая цифра числа {c}");
 //}

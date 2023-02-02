@@ -15,8 +15,7 @@ while (a >= 100)
     a = c;
     b = a % 10;
     Console.Clear();
-    Console.WriteLine(k);
-    
+    Console.WriteLine(k);  
 }
 while (k == 0)
 {
